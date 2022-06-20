@@ -38,3 +38,13 @@ alter table Teacher add constraint studentteacher foreign key (teacher_id) refer
 alter table Class add constraint classteacher foreign key (class_id) references StudentManagementSystem.Student (student_id);
 alter table Transcript add constraint transcirptteacher foreign key (Transcript_id) references StudentManagementSystem.Student (student_id);
 alter table login add constraint loginstudent foreign key (user_id) references StudentManagementSystem.Student (student_id);
+
+insert into StudentManagementSystem.Student values (1,'张三','男',18,152840707,0);
+insert into StudentManagementSystem.Student values (2,'张四','男',18,252840707,0);
+insert into StudentManagementSystem.Teacher values (1,'杨老师');
+insert into StudentManagementSystem.Teacher values (2,'张老师');
+insert into StudentManagementSystem.Transcript values (1,'语文',1);
+insert into StudentManagementSystem.Transcript values (2,'数学',2);
+insert into StudentManagementSystem.Class values (1,'语文');
+insert into StudentManagementSystem.Class values (2,'数学');
+insert into StudentManagementSystem.login values (1,'root',1129491453);
