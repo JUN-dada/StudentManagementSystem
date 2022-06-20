@@ -1,3 +1,5 @@
+create database StudentManagementSystem;
+use StudentManagementSystem;
 create table Student
 (
     `student_id` int(10) primary key auto_increment not null comment '学生id',
